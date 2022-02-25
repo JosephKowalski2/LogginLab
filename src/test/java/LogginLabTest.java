@@ -21,7 +21,7 @@ public class LogginLabTest {
         LogginLab lab = new LogginLab();
         lab.setThreshold(finalLimit);
 
-        for (Integer i = 1; i <= finalLimit + 1; i++) {
+        for (Integer i = 1; i <= finalLimit + 5; i++) {
             if (lab.thresholdExceeds(i)) {
                 logger.log(Level.INFO, "Threshold not reached! It is "+i);
                 assertTrue(lab.thresholdExceeds(i));
